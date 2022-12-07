@@ -1,0 +1,78 @@
+:root{
+    --threeHF_Card: 350px;
+    --threeH_Card: 300px;
+    --twoHF_Card: 250px;
+}
+
+body{
+    background: hsl(212deg 45% 89%);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.card{
+    position: absolute;
+    top: calc((100vh / 2) - 280px);
+    left: calc((100vw / 2) - 191px);
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+    padding: 1em;
+    width: var(--threeHF_Card); 
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.card-imageQR{
+    height: var(--threeHF_Card);
+    width: var(--threeHF_Card);
+    object-fit: cover;
+    border-radius: 13px;
+}
+.card-title_container{
+    width: var(--threeH_Card); 
+    margin: 0 auto;
+    padding: 1.2em 0 1.2em 0;
+}
+.card-title{
+    margin: 0px;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.04em;
+    font-weight: bolder;
+    line-height: 1.5em;
+    text-align-last: justify;
+}
+.card-description{
+    color: #949494;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 0 auto;
+    width: var(--threeH_Card); 
+}
+@media only screen and (max-width: 400px) {
+    .card{
+        top: calc((100vh / 2) - 235.815px);
+        left: calc((100vw / 2) - 166px);
+        width: var(--threeH_Card);
+    }
+    .card-imageQR{
+        height: var(--threeH_Card);
+        width: var(--threeH_Card);
+    }
+    .card-title_container{
+        width: var(--twoHF_Card);
+    }
+    .card-title{
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+    .card-description{
+        line-height: 1.2em;
+        letter-spacing: normal;
+        width: var(--twoHF_Card);
+        font-size: 0.9em;
+    }
+}
